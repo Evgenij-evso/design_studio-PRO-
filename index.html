@@ -4,24 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>SIGMAmontage</title>
 </head>
 <body>
+    <img class="LOogo" src="favicon2.png" alt="">
 
     <h1 class="h_name"><span style="color: #8F11F2;">МОНТАЖ И АБРАБОТКА ВИДИО</span> <br> НИЗКИЕ ЦЕНЫ <br> БЫСТРАЯ, А ГЛАВНОЕ КАЧЕСТВЕННАЯ РАБОТА</h1>
-    <img class="penis_svg" src="img/penis.svg" alt="">
+    <img id="penis_svg" class="penis_svg" src="img/penis.svg" alt="">
 
     <div class="cont-form_contact">
-        <form class="form_contact" action="mail.php" method="POST">
+        <form class="form_contact" method="POST">
             <input type="hidden" name="form-text">
 
             <input class="input_contact" type="text" name="name" placeholder="Имя">
             <input class="input_contact" type="tel" name="phone" placeholder="+7 (___) ___ __ __">
 
-            <button class="button_contact" type="submit">Атправить</button>
+            <button type="button"  class="button_contact">Атправить</button>
         </form>
     </div>
+
+    <div id="hover" class="YES_penis-container">
+        <h1 class="text_penis">Вы аставили заявку. не забудьте пошюпать пенис перед уходом</h1>
+        <button  class="penis_very_yes">Обязательно</button>
+    </div>
+    <script>
+        let penis_yes = document.getElementById('hover')
+        let button_contact = document.querySelector('.button_contact')
+        let penis_very_yes = document.querySelector('.penis_very_yes')
+        let img_penis = document.getElementById('penis_svg')
+
+        button_contact.addEventListener('click',function(){
+            penis_yes.style.display = 'flex'
+            console.log('sdgsdgfs')
+        })
+        penis_very_yes.addEventListener('click',function(){
+            penis_yes.style.display = 'none'
+            console.log('sdgsdgfs')
+        })
+
+        img_penis.addEventListener('mouseenter',function(){
+            penis.style.scale = '0.9'
+        })
+        img_penis.addEventListener('mouseleave',function(){
+            penis.style.scale = '1'
+        })
+
+    </script>
 </body>
 </html>

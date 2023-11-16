@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: auto;
+}
+text{
+    font-weight: 100;
+}
+a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    
+}
+.cont-form_contact{
+    width: 27em;
+    height: 40em;
+
+    background-color: #D517CD;
+
+    padding: 20px;
+
+    margin-top: 100px;
+    margin-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    position: absolute;               /* 2 */
+    right: 10em;
+    left: auto;
+    top: 45%;                         /* 3 */
+    transform: translate(0, -55%)     /* 4 */
+
+    rotate(5deg)
+}
+
+.input_contact{
+    background-color: #00000000;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 2em;
+    margin: 25px 0;
+
+    box-shadow: 0px 20px 10px -17px #11111100;
+
+    border: none !important;
+
+    width: 100%;
+    height: 2em;
+
+    color: #0FE8C1;
+
+    rotate: 1deg;
+}
+.input_contact::placeholder{
+    color: #0FE8C1 !important;
+}
+.input_contact:focus-visible{
+    outline: none;
+    box-shadow: 0px 19px 9px -17px #57575736;
+}
+.button_contact{
+    width: 50%;
+    height: 2.5em;
+    background-color: #ffffff00;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 2.5em;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin-top: 88px;
+    rotate: 2deg;
+}
+
+.button_contact:hover{
+    background-color: #ffffff2d;
+
+}
+.container_logo-form{
+    width: 100%;
+    height: 5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding: 0.2em;
+    color: white;
+}
+.logo-form{
+    height: 100%;
+}
+.span_name-product{
+    font-size: 1.7em;
+    color: #5f5f5f;
+}
+.h_name{
+    font-size: 3em;
+    color: #FF008A;
+
+    position: absolute;
+    top: 3%;
+    left: 45%;                         /* 3 */
+    transform: translate(-55%,0)     /* 4 */
+    rotate(3deg)
+}
+.penis_svg{
+    height: 30em;
+
+    position: absolute;
+    left: 10%;
+    top: 60%;                         /* 3 */
+    transform: translate(0,-40%)     /* 4 */
+    rotate(-15deg)
+}

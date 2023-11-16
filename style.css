@@ -121,8 +121,8 @@ a{
     position: absolute;
     left: 10%;
     top: 60%;                         /* 3 */
-    transform: translate(0,-40%)     /* 4 */
-    rotate(-15deg);
+    transform: translate(0,-40%)     /* 4 */;
+    
     cursor: grab;
 }
 .YES_penis-container{

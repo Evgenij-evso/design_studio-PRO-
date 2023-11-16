@@ -29,11 +29,12 @@
         <h1 class="text_penis">Вы аставили заявку. не забудьте пошюпать пенис перед уходом</h1>
         <button  class="penis_very_yes">Обязательно</button>
     </div>
+    <script src="anime.min.js"></script>
     <script>
         let penis_yes = document.getElementById('hover')
+        let img_penis = document.getElementById('penis_svg')
         let button_contact = document.querySelector('.button_contact')
         let penis_very_yes = document.querySelector('.penis_very_yes')
-        let img_penis = document.getElementById('penis_svg')
 
         button_contact.addEventListener('click',function(){
             penis_yes.style.display = 'flex'
@@ -45,10 +46,21 @@
         })
 
         img_penis.addEventListener('mouseenter',function(){
-            penis.style.scale = '0.9'
+            img_penis.style.scale = '0.95'
         })
         img_penis.addEventListener('mouseleave',function(){
-            penis.style.scale = '1'
+            img_penis.style.scale = '1'
+        })
+
+        img_penis.addEventListener('click',function(){
+            anime({
+                targets: img_penis,
+                rotate: '360deg',
+                direction: 'alternate',
+                duration: 1000,
+                easing: 'linear',
+                scaleX:10
+            })
         })
 
     </script>
